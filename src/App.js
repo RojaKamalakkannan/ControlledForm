@@ -7,7 +7,7 @@ const [inputField , setInputField] = useState({
     last_name: '',
     gmail: '',
     gender: '',
-    courses:'', 
+    courses:'Angular', 
     
 })
 const [error,setErrorMessage] = useState({
@@ -105,16 +105,17 @@ return (
         name="gender" 
         value="male"
         onChange={inputsHandler} 
-        value={inputField.gender}/>
-        Male
+        />Male
+        
+        
 
         <input 
         type="radio" 
         name="gender" 
         value="Female"
-        onChange={inputsHandler} 
-        value={inputField.gender}/>
+        onChange={inputsHandler} />
         Female
+        
       </div>
       <br />
 
